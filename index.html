@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online CSV Editor and Viewer</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/papaparse@5.4.1/papaparse.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="upload-area" id="dropZone">
+            <div class="social-links">
+                <a href="https://github.com/lothartj" target="_blank" class="social-link">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/lothar-tjipueja-a19697276" target="_blank" class="social-link">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://lotharsportfolio.onrender.com/" target="_blank" class="social-link">
+                    <i class="fas fa-globe"></i>
+                </a>
+            </div>
+            <div class="upload-content">
+                <i class="fas fa-file-csv"></i>
+                <h2>Drop your CSV file here</h2>
+                <p>or</p>
+                <label class="upload-button" for="fileInput">
+                    Choose File
+                    <input type="file" id="fileInput" accept=".csv,.xlsx,.xls" hidden>
+                </label>
+            </div>
+        </div>
+
+        <div class="table-container" id="tableContainer" style="display: none;">
+            <div class="excel-toolbar">
+                <div class="toolbar-left">
+                    <button class="toolbar-button" id="deleteRowBtn">
+                        <i class="fas fa-minus"></i> Delete Row
+                    </button>
+                    <button class="toolbar-button" id="deleteColumnBtn">
+                        <i class="fas fa-minus"></i> Delete Column
+                    </button>
+                    <div class="toolbar-separator"></div>
+                    <button class="toolbar-button" id="newFileBtn">
+                        <i class="fas fa-file"></i> New
+                    </button>
+                    <button class="toolbar-button" id="downloadBtn">
+                        <i class="fas fa-download"></i> Download
+                    </button>
+                </div>
+                <div class="toolbar-right">
+                    <a href="https://github.com/lothartj" target="_blank" class="social-link">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/lothar-tjipueja-a19697276" target="_blank" class="social-link">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://lotharsportfolio.onrender.com/" target="_blank" class="social-link">
+                        <i class="fas fa-globe"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="table-wrapper">
+                <table id="csvTable"></table>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
