@@ -430,4 +430,4 @@ document.addEventListener('DOMContentLoaded', () => {
             nextCell.classList.add('selected');
         }
     }
-}); 
+});
