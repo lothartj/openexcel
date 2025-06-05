@@ -1,6 +1,6 @@
 # CSV Online Viewer
 
-A modern, user-friendly web application for viewing and editing CSV files directly in your browser. Try it out here: [CSV Online Viewer](https://github.com/lothartj/openexcel)
+A modern, user-friendly web application for viewing and editing CSV files directly in your browser. Try it out here: https://lothartj.github.io/openexcel/
 
 ![CSV Online Viewer](https://raw.githubusercontent.com/lothartj/openexcel/main/screenshot.png)
 
